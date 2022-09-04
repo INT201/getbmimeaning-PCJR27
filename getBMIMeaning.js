@@ -1,9 +1,18 @@
 const { template } = require('@babel/core')
 
 function calculateBMI(weight, height) {
-  //code here
-}
-function getBMIMeaning(weight, height) {
-  //code here
-}
+  bmi = weight/(height*height)
+  return bmi
+
+ }
+ function getBMIMeaning(weight, height) {
+  let BMI = calculateBMI(weight, height)
+  if(BMI <18.5){
+    console.log("Underweight")
+  } else if(BMI >18.4 && BMI <25.0){
+    console.log("Normal weight")
+  }else if (BMI >25.0){
+    console.log("Overweight")}
+ return BMI
+ }
 module.exports = getBMIMeaning
