@@ -8,11 +8,12 @@ function calculateBMI(weight, height) {
  function getBMIMeaning(weight, height) {
   let BMI = calculateBMI(weight, height)
   if(BMI <18.5){
-    console.log("Underweight")
+    return("Underweight")
   } else if(BMI >18.4 && BMI <25.0){
-    console.log("Normal weight")
+    return("Normal weight")
   }else if (BMI >25.0){
-    console.log("Overweight")}
+    return("Overweight")
+  }else
+  return("Unknown")
  }
- console.log(getBMIMeaning(65,1.8))
 module.exports = getBMIMeaning
