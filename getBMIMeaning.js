@@ -14,4 +14,5 @@ function calculateBMI(weight, height) {
   }else if (BMI >25.0){
     console.log("Overweight")}
  }
+ console.log(getBMIMeaning(65,1.8))
 module.exports = getBMIMeaning
