@@ -1,3 +1,4 @@
+const getBMIMeaning = require('./getBMIMeaning')
 const testFn = require('./getBMIMeaning')
 
 test('output#1', () => {
